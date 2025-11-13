@@ -2,7 +2,7 @@
 
 namespace Database\Seeders;
 
-use App\Models\Appsettings;
+use App\Models\AppSettings;
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
 
@@ -13,7 +13,7 @@ class AppsettingSeeder extends Seeder
      */
     public function run(): void
     {
-        Appsettings::create([
+        AppSettings::create([
             'name' => 'Pengaduan Masyarakat',
             'url' => 'http://127.0.0.1:8000',
             'slogan' => 'Sistem Pengaduan Masyarakat',

@@ -3,7 +3,7 @@
 namespace App\Http\Controllers\Auth;
 
 use App\Http\Controllers\Controller;
-use App\Models\Appsettings;
+use App\Models\AppSettings;
 use App\Models\User;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
@@ -18,7 +18,7 @@ class AuthController extends Controller
      */
     public function showLoginForm()
     {
-        $appset = Appsettings::first();
+        $appset = AppSettings::first();
 
         return view('auth.login', compact('appset'));
     }

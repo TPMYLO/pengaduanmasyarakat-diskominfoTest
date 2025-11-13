@@ -6,7 +6,7 @@ use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Str;
 
-class Appsettings extends Model
+class AppSettings extends Model
 {
     use HasFactory;
     protected  $table = 'app_settings';
